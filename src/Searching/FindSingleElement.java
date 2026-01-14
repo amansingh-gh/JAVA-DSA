@@ -9,7 +9,7 @@ public class FindSingleElement {
 
     int st=0, end=n-1;
     while(st<=end){
-        int mid = st+(end-st)/2;
+        int mid = st+(end-st)/2;;
         if(arr[mid]!=arr[mid-1] && arr[mid]!=arr[mid+1]) return arr[mid];
         int firOcc = mid, secOcc = mid;
         if(arr[mid]==arr[mid-1]) firOcc = mid-1;
