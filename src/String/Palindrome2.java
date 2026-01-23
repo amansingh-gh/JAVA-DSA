@@ -6,7 +6,9 @@ public class Palindrome2 {
 
         sb.append(str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase());
         int st=0, end = sb.length()-1;
+
         System.out.println(sb);
+
         while (st<end){
             if(sb.charAt(st)!=sb.charAt(end)){
                 return false;
